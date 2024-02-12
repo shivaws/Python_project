@@ -1,5 +1,33 @@
+**Calculator.cpp File**
 
+- This C++ program is a simple calculator that takes user input for three numbers and a choice of operation. Based on the user's input, it performs addition, subtraction, multiplication, or division on the provided numbers and displays the result.
 
+- Here's a breakdown of the program's functionality:
+
+- The program starts by welcoming the user to the calculator.
+
+- It prompts the user to enter three numbers (Num_One, Num_Two, and Num_Three).
+
+- It then displays a menu of operations:
+
+Addition
+Subtraction
+Multiplication
+Division
+
+- The user is prompted to choose an operation by entering a number (choice).
+
+- Depending on the user's choice, the program performs the corresponding operation:
+
+Addition if choice is 1
+Subtraction if choice is 2
+Multiplication if choice is 3
+Division if choice is 4
+If the user chooses division (4), the program checks if the second number (Num_Two) is zero to avoid division by zero. If it is, a message is displayed, and the program exits.
+
+- After performing the selected operation, the program displays the result.
+
+- The program terminates.
 
 
 
