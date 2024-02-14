@@ -1,61 +1,41 @@
 **Calculator.cpp File**
 
-- This C++ program is a simple calculator that takes user input for three numbers and a choice of operation. Based on the user's input, it performs addition, subtraction, multiplication, or division on the provided numbers and displays the result.
-
-- Here's a breakdown of the program's functionality:
-
-- The program starts by welcoming the user to the calculator.
-
-- It prompts the user to enter three numbers (Num_One, Num_Two, and Num_Three).
-
-- It then displays a menu of operations:
-
-Addition
-Subtraction
-Multiplication
-Division
-
-- The user is prompted to choose an operation by entering a number (choice).
-
-- Depending on the user's choice, the program performs the corresponding operation:
-
-Addition if choice is 1
-Subtraction if choice is 2
-Multiplication if choice is 3
-Division if choice is 4
-If the user chooses division (4), the program checks if the second number (Num_Two) is zero to avoid division by zero. If it is, a message is displayed, and the program exits.
-
-- After performing the selected operation, the program displays the result.
-
-- The program terminates.
-
-
+- Opens a file called "output.txt" for writing to log all input and output
+- Prints a welcome message and prompt the user to input 3 numbers
+- Reads the 3 input numbers using cin and validates input
+- Write the prompts and enter numbers to the log file using fputs() and fprintf()
+- Prints options for operations (add, subtract, multiply, divide)
+- Reads user choice for operation using cin and validates input
+- Writes operation choice to log file
+- Performs the selected arithmetic operation on the 3 numbers using a switch statement
+- Handles divide by zero error case appropriately
+- Prints out the result of the calculation to the console
+- Writes result to log file along with suitable messages
+- Closes the log file before exiting
+- Implements a simple calculator with add/sub/mul/div operations
+- Logs all input and outputs to a text file
+- Validate inputs from the user
+- Performs appropriate math operations based on user choice
+- Prints out results and handles errors
 
 
 **Calculator.py File**
 
+The program defines a function called calculator_program() that implements a basic calculator by running an external program called "calculator" as a subprocess.
 
-This is a Python file where calculator.py is a Python program that uses the subprocess module to run a C++ program named "calculator" and capture its output. Here's a breakdown of what each part of the program does:
-
-- Subprocess.run: This function is used to run the external command (in this case, the "./calculator" C++ program).
-
-- ["./calculator"]: This is the command that will be executed. It runs the C++ program named "calculator."
-
-- Check=True: If the command returns a non-zero exit code, subprocess.CalledProcessError is raised, and the program will print an error message.
-
-- Capture_output=True: This option captures the standard output of the executed command.
-
-- Text=True: This option specifies that the output should be returned as a string (text) rather than as bytes.
-
-- Result.stdout: This retrieves the standard output of the executed command.
-
-The program then prints the captured output, or in case of an error, it prints an error message.
-
+- Prompts the user to input 3 numbers and a choice of operation (add, subtract, multiply, divide)
+- Formats the input into a multiline string to pass to the subprocess
+- Opens the "calculator" program as a subprocess, pipes input and output to it
+- Writes the input string into the subprocess's stdin
+- Reads the output and errors from the subprocess after it finishes
+- Prints only the relevant output line that contains the calculation result
+- Prints any errors from the subprocess if there are any
+- Wraps it in a try/except to catch any errors in the Python code
+- Checks if it is run as the main program and if so, calls the calculator_program() function
 
 **Main-Script.py File**
 
-- This code imports a Python module named calculator and calls the calculator_program function from that module. 
-
+- This code imports a calculator Python module and calls the calculator_program function from that module. 
 - Import calculator: This line imports the Python module named calculator. The module likely contains the calculator_program function.
-
-- Calculator.calculator_program(): This line calls the calculator_program function from the calculator module. The function is expected to execute some functionality, possibly interacting with a C++ program or providing some kind of calculation or result.
+- Calculator.calculator_program(): This line calls the calculator_program function from the calculator module. The function is expected to execute some functionality, possibly interacting with a C++ program or providing some calculation or result.
+![image](https://github.com/shivaws/Python_project/assets/83856682/83ce1e0c-7f59-4ee0-946d-43e9d658fd47)
