@@ -1,5 +1,5 @@
 
-//this is a calculator c++ program//
+///this is a calculator c++ program///
 
 #include <iostream>
 #include <cstdio>
