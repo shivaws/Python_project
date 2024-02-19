@@ -7,7 +7,7 @@
 - Prints options for operations (add, subtract, multiply, divide)
 - Reads user choice for operation using cin and validates input
 - Writes operation choice to log file
-- Performs the selected arithmetic operation on the 3 numbers using a switch statement
+- Performs the selected arithmetic operation on the 3 numbers using a switch statement.
 - Handles divide by zero error case appropriately
 - Prints out the result of the calculation to the console
 - Writes result to log file along with suitable messages
