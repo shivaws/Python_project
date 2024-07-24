@@ -39,4 +39,3 @@ The program defines a function called calculator_program() that implements a bas
 - Import calculator: This line imports the Python module named calculator. The module likely contains the calculator_program function.
 - Calculator.calculator_program(): This line calls the calculator_program function from the calculator module. The function is expected to execute some functionality, possibly interacting with a C++ program or providing some calculation or result.
 
-.......
