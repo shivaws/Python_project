@@ -17,8 +17,7 @@
 - Validate inputs from the user
 - Performs appropriate math operations based on user choice
 - Prints out results and handles errors
-
-
+.
 **Calculator.py File**
 
 The program defines a function called calculator_program() that implements a basic calculator by running an external program called "calculator" as a subprocess.
