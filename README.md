@@ -17,7 +17,7 @@
 - Validate inputs from the user
 - Performs appropriate math operations based on user choice
 - Prints out results and handles errors
-.
+
 
 **Calculator.py File**
 
